@@ -1,0 +1,101 @@
+@import '../varebales/varebales';
+.banner{
+    .swiper-wrapper{
+        .swiper-slide{
+            img{
+                max-height: calc(100vh);
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.Collection-New{
+    .row-grid{
+        margin-left: -15px;
+        margin-right: -15px;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        @media (max-width : 1200px) {
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        }
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+    .item-product{
+        &:first-child{
+            grid-column: 1/3;
+            @media (max-width : 768px) {
+                grid-column: 1            
+            }
+        }
+        img{
+            object-fit: cover;
+        }
+
+        .Content-Collection {
+            inset-block-start: 40%;
+            width: 45%;
+            h3{
+                color: $white;
+            }
+        }
+    }
+}
+
+.services {
+    .content-service{
+        p{
+            max-width: 90%;
+        }
+    }
+}
+
+.subscript-cover{
+    background-image: url('/vendor/imgs/blake-wisz-GFrB.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 315px;
+    .overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        top: 0;
+        inset-inline-start: 0;
+        .content-subscript{
+            @media (max-width : 768px) {
+                max-width: 350px;
+            }
+            max-width: 540px;
+            margin-left: auto;
+            margin-right: auto;
+            flex-direction: column;
+            height: 100%;
+            h3{
+                color: $white;
+            }
+            form{
+                .form-control{
+                    display: flex;
+                    justify-content: space-between;
+                    button{
+                        background-color: $MailChimp;
+                    }
+                    input{
+                        flex-grow: 1;
+                        border-radius: 50px;
+                        outline: none;
+                        border: none;
+                    }
+            }
+        }
+    }
+}
+}
+.selected{
+    .row{
+        justify-content: space-between;
+    }
+}

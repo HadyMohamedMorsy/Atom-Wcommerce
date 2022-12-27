@@ -1,18 +1,12 @@
-$subNav               : hsl(261, 37%, 81%);
-$navbar               : hsl(223, 10%, 27%);
-$pointOfCourserActive : hsl(226, 85%, 63%);
-$white                : hsl(0, 0%, 100%);
-$RedDiscount          : hsl(0, 100%, 50%);
-$textSmall            : hsl(0, 0%, 50%);
-$MailChimp            : hsl(37, 96%, 61%);
-$black                : hsl(0, 0%, 0%);
 
+@import '../varebales/varebales';
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
 
 body{
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -55,7 +49,7 @@ main nav{
             -ms-transform: translate(-50 , -50%);
             -o-transform: translate(-50 , -50%);
         
-            inset-block-start: 50%;
+            inset-block-start: 70%;
             inset-inline-start: calc(50% - 70px);
             @media (min-width : 0px) {
                 width: 80px;
@@ -78,14 +72,16 @@ main nav{
             @media (min-width : 992px) {
                 width: 100px;
                 height: 100px;
-                inset-block-start: 60%;
+                inset-block-start: 30%;
                 inset-inline-start: calc(50% - 50px);
             }
             @media (min-width : 1200px) {
+                inset-block-start: 0%;
                 width: 130px;
                 height: 130px;
             }
             @media (min-width : 1400px) {
+                inset-block-start: 30%;
                 width: 130px;
                 height: 130px;
             }
@@ -98,5 +94,21 @@ main nav{
             }
     }
 
+    
+}
+
+.btn {
+    background-color: $white;
+    padding: 5px 50px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    height: 60px;
+    border: 1px solid #000;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
     
 }
