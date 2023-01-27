@@ -1,0 +1,16 @@
+.main-nav {
+    height:60px;
+}
+
+header .main-nav .circle {
+    inset-block-start: unset;
+    width: 120px;
+    height:120px;
+    border: 2px solid yellow;
+}
+.main-nav .circle img{
+    width:100%;
+}
+*{
+    color:red;
+}

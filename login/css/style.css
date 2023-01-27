@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    /* border: 1px solid yellow; */
+}
+a{
+    text-decoration:none;
+    display:block;
+}
+button{
+    border-color: transparent;
+}
+form{
+    width:450px;
+    /* height: 450px; */
+    /* border: 1px solid red; */
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+form:first-child{
+    text-align: center;
+}
+form .fill{
+    width:353px;
+    height:57px;
+    border-radius:40px;
+    padding:20px 40px;
+    border:2px solid #D8D8D8;
+
+}
+form .fill:not(:last-child){
+    margin-top:15px;
+}
+form .forgot{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:340px;
+
+    margin:20px auto;
+
+}
+.checkbox{
+    display:inline-block;
+    width: 20px;
+    height:20px;
+    margin-right: 15px;
+}
+form .forgot div{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    
+}
+form .forgot div span:first-child,
+form .forgot div span:last-child{
+    contain: "";
+    width:150px;
+    height: 2px;
+    background-color: #D8D8D8;
+    margin-right: 4px;
+}
+form .forgot div p{
+    text-align: left;
+}
+
+.login-by button{
+    width:171px;
+    height: 57px;
+    border-radius: 40px;
+    
+}
+.login-by button i{
+    margin-right:15px;
+    font-size: 20px;
+}
+
+.login-by .facebook{
+    background-color:#3B5998 ;
+    color:#FFFFFF
+}
+.login-by .gmail{
+    background-color:#FFF;
+    color:#000000;
+    border-color: #F1584D;
+}
+.login-by .gmail i{
+    color:#F14336;
+}
+.sign{
+    width:353px;
+    height:58px;
+    border-radius: 40px;
+
+    margin-top:20px;
+    background-color:#FBB03B;
+    color:#000000;
+}
