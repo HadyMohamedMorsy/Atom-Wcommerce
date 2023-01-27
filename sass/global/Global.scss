@@ -158,6 +158,13 @@ main{
     
 }
 
+.border-products-filter{
+    border: 1px solid rgb(0, 0, 0 , 0.4);
+}
+.header-filter{
+    text-transform: uppercase;
+}
+
 .circle-style-different{
     inset-inline-start: 50%;
     transform: translateX(-50%);
@@ -170,12 +177,19 @@ main{
     }
 }
 
+.size-box{
+    border: 1px solid #000;
+
+}
+.colors-borders{
+    .box{
+        background-color: red;
+        height: 30px;
+    }
+}
+
 .title-section-between{
     .row{
         justify-content: space-between;
     }
-}
-
-.icons-cart{
-    
 }
