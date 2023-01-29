@@ -7,35 +7,46 @@
     <title>Sign-up</title>
     <link rel="stylesheet" href="css/style.css"/> 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;700;800&family=Work+Sans:wght@300;500;700;800&display=swap" rel="stylesheet">
 
     
 </head>
 <body>
-    <form>
-        <h1>Sign Up</h1>
+    <div class="center">
 
-        <input class="fill" type="text" placeholder="First Name" />
-        <input class="fill"  type="text" placeholder="Second Name" />
-        <input class="fill" type="email" placeholder="E-mail"/>
-        <input class="fill" type="password" placeholder="Password"/>
-        
-        <div class="forgot">
-            <div>
-                <input class="checkbox"type="checkbox">
-                <p>I agree to the Terms of services and privacy policy</p> 
+        <div class="close">
+            <a href="index.html"><i class="uil uil-multiply"></i></a>
+        </div>
+        <div class="title">
+            <h1>Create an account and 
+                discover the benefits</h1>
+        </div>
+
+        <form class="sign-up">
+            <input class="one-row p-40" type="text" placeholder="First Name" />
+            <input class="one-row p-40"  type="text" placeholder="Second Name" />
+            <input class="one-row p-40" type="email" placeholder="E-mail"/>
+            <input class="one-row p-40" type="password" placeholder="Password"/>
+            
+            <div class="mid-section">
+                <div class="f-center">
+                    <input class="checkbox"type="checkbox">
+                    <label>I agree to the Terms of services and privacy policy</label> 
+                </div>
             </div>
             
-        </div>
         
-    
-        <button class="sign">Sign Up</button>
-        <div class="forgot">
-            <p>Are You already amember?</p> 
-            <a href="index.html">login</a>
-        
-        </div>
-    </form>
+            <button class="main-btn">Sign Up</button>
+
+            <div class="mid-section">
+                <p>Are You already amember?</p> 
+                <a href="index.html">login</a>
+            </div>
+        </form> 
+    </div>
     
 </body>
 </html>

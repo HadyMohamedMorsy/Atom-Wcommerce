@@ -7,29 +7,69 @@
     <title>Forgot Password</title>
     <link rel="stylesheet" href="css/style.css"/> 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
+    <!-- Font poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;700;800&family=Work+Sans:wght@300;500;700;800&display=swap" rel="stylesheet">
 
     
 </head>
 <body>
-    <form>
-        <h1>Forgot Your Password?</h1>
-
-        <input class="fill"type="email" placeholder="E-mail" />
-        
-        <div class="forgot">
-            <div class="in">
-                <span></span>
-                <span>OR</span>
-                <span></span>
-                
-            </div>
-        </div>
-        <input class="fill"type="password" placeholder="Phone Number" />
-
-        <button class="sign">Reset Password</button>
     
-    </form>
+        <div class="center">
+
+            <div class="close">
+                <a href="index.html"><i class="uil uil-multiply"></i></a>
+            </div>
+        
+        <!-- =======title============ -->
+        <div class="title">
+            <h1>Forgot Your Password?</h1>
+            <p>Enter your email or phone number 
+                and recover your account</p>
+        </div>
+        <!-- =========end title========== -->
+        <form class="forgot-pass">
+            <input class="one-row p-40"type="email" placeholder="E-mail" />
+            <!-- ==============or section======= -->
+            <div class="mid-section">
+                <div class="or">
+                    <span></span>
+                    <span>OR</span>
+                    <span></span>
+                </div>
+            </div>
+            <!-- =========end or section============ -->
+
+            <!-- ==============tel======== -->
+            <div class="tel one-row ">
+                <input type="tel" placeholder="Phone Number" />
+
+                <div class="button">
+                    <button type="submit">
+                        <img src="flag.png"/>
+                        <span>+1</span>
+                        <i class="uil uil-angle-down"></i>
+                        <ul>
+                            <li>
+                                <img src="flag.png">
+                                <span>Egypt +02</span>
+                            </li>
+                            <li>
+                                <img src="flag.png">
+                                <span>Egypt +02</span>
+                            </li>
+                        </ul>
+                    </button>
+                </div>
+
+            </div>
+            <!-- ========end tel================ -->
+            
+
+            <button class="main-btn">Reset Password</button>
+        
+        </form>
+
+    </div>
     
 </body>
 </html>

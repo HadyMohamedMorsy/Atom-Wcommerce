@@ -7,37 +7,50 @@
     <title>Login</title>
     <link rel="stylesheet" href="css/style.css"/> 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
+    <!-- Font poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;700;800&family=Work+Sans:wght@300;500;700;800&display=swap" rel="stylesheet">
 
     
 </head>
 <body>
-    <form>
-        <h1>Login</h1>
+    <div class="center">
 
-        <input class="fill"type="email" placeholder="E-mail" />
-        <input class="fill"type="password" placeholder="Password"/>
+        <div class="close">
+            <a href="index.html"><i class="uil uil-multiply"></i></a>
+        </div>
+
+        <div class="title">
+            <h1>Login</h1>
+        </div>
         
-        <div class="forgot">
-            <div>
-                <input class="checkbox" type="checkbox">
-                <p>Keep me signed in</p> 
+        <form class="login">
+            <input class="one-row p-40"type="email" placeholder="E-mail" />
+            <input class="one-row p-40"type="password" placeholder="Password"/>        
+
+            <div class="mid-section">
+                <div class="f-center">
+                    <input class="checkbox" type="checkbox">
+                    <label>Keep me signed in</label> 
+                </div>
+                <a href="forget.html">Forget Password</a>
             </div>
             
-            <a href="forget.html">Forget Password</a>
-        </div>
-        
-        <div class="login-by">
-            <button class="facebook"><i class="uil uil-facebook-f"></i>Facebook</button>
-            <button class="gmail"><i class="uil uil-envelope-alt"></i>Gmail</button>
-        </div>
-        <button class="sign">Sign in</button>
-        <div class="forgot">
-            <p>Not a member yet?</p> 
-            <a href="signup.html">Sign up</a>
-        
-        </div>
-    </form>
+            <div class="mid-section">
+
+                <button class="two-row facebook"><i class="uil uil-facebook-f"></i>Facebook</button>
+
+                <button class="two-row gmail"><i class="uil uil-envelope-alt"></i>Gmail</button>
+            </div>
+
+            <button class="main-btn">Sign in</button>
+
+            <div class="f-center">
+                <p>Not a member yet?</p> 
+                <a href="signup.html">Sign up</a>
+            </div>
+
+        </form>
+    </div>
     
 </body>
 </html>

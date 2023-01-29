@@ -1,99 +1,377 @@
+/* =============root============================ */
+:root{
+    --grey-border:#D8D8D8;
+    --grey-text:#7D7D7D;
+    --body-bg:#F5F5F5;
+    --form-bg:#FFFFFF;
+    --main-bt:#FBB03B;
+    --input-c:#808080;
+    --black-ft:#000000;
+    --fb-bg-color:#3B5998;
+    --gmail-icn-color:#F14336;
+    /* --w-in-inp:60px; */
+    --transition:all 400ms ease;
+    /* --w-one-row:353px; */
+    /* --w-two-row:170px; */
+    --w-form:447px;
+    --h-form:643px;
+}
+/* ======================================= */
+/* =========global========================= */
 *{
     box-sizing: border-box;
-    /* border: 1px solid yellow; */
+    margin:0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:var(--body-bg) ;
 }
 a{
     text-decoration:none;
     display:block;
+    color: var(--black-ft);
+}
+a:visited{
+    color:var(--main-bt);
+}
+ul{
+    list-style: none;
 }
 button{
     border-color: transparent;
+    cursor: pointer;
 }
-form{
-    width:450px;
-    /* height: 450px; */
-    /* border: 1px solid red; */
+.one-row{
+    width:95%;
+    height:50px;
+    border-radius: 40px;
+    border-width: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid var(--grey-border);
+    margin-bottom:10px;
+}
+
+/* form .one-row:not(:first-of-type){
+    margin-top:20px;
+} */
+
+.p-40{
+    padding:0px 40px;
+}
+form .one-row::placeholder{
+    text-align: center;
+}
+.main-btn{
+    width:100%;
+    height:50px;
+    border-radius: 40px;
+    background-color:var(--main-bt);
+    color:var(--black-ft);
+    margin: 10px auto 10px auto;
+}
+.two-row{
+    width:45%;
+    height:50px;
+    border-radius: 40px;
+    border-width: 1px;
+    margin-top:10px;
+    
+}
+.mid-section{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0% auto 0 auto;
+}
+.f-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input,button{
+    display: block;
+}
+.checkbox{
+    width:20px;
+    height: 20px;
+}
+
+
+
+
+
+/* ==========main form  ====== */
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+:root{
+    --margin-t-b:30px;
+}
+.center{
+    
+    width:500px;
+    /* height:610px; */
+    border-radius: 0px;
     position: absolute;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+    background-color: var(--form-bg);
+    padding-top: 30px;
+    padding-bottom: var(--margin-t-b);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
-form:first-child{
+@media (max-width:480px) {
+    .center{
+        width:350px;
+    }
+    .center h1 {
+        font-size:21 ;
+    }
+    .center p{
+        font-size: 14px;
+    }
+    .center label {
+        font-size: 14px;
+    }
+    .center a{
+        font-size: 14px;
+    }
+    .checkbox{
+        width:15px;
+        height: 15px;;
+    }
+    
+}
+
+form{
+    width:85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* =====in login====== */
+.login .title {
+    margin-bottom: 20px;
+
+
+}
+.login .f-center:last-child {
+    gap:40px;
+}
+
+/* ========end of main form====== */
+.close{
+    width:20px;
+    margin-left:90%;
+    cursor: pointer;
+}
+.close a:visited{
+    color: red;
+}
+
+/* ======title=========== */
+
+.center .title{
+    margin: 10px auto 20px auto;
+    width:90%;
+}
+.center .title h1{
     text-align: center;
+    font-weight: 700;
+    /* font-size: 21px; */
 }
-form .fill{
-    width:353px;
-    height:57px;
-    border-radius:40px;
-    padding:20px 40px;
-    border:2px solid #D8D8D8;
+.center .title p{
+    /* font-size: 13px; */
+    width:70%;
+    text-align: center;
+    color: var(--grey-text);
+    margin: 5px auto 0 auto;
+    line-height: 1.2;
+        
 
 }
-form .fill:not(:last-child){
-    margin-top:15px;
-}
-form .forgot{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    width:340px;
+/* @media (min-width:512px){
+    .center .title h1{
+        font-size:28px;
+        
+    }
+    .center .title p{
+        font-size:18px;
+    }
+} */
+/* ==========end title============ */
 
-    margin:20px auto;
 
+/* =========checkbox section========== */
+
+.checkbox +label{
+    padding-left: 10px;
 }
-.checkbox{
-    display:inline-block;
-    width: 20px;
-    height:20px;
-    margin-right: 15px;
+/* ========end of checkbox============ */
+
+/* =======or section============ */
+:root{
+    --or-width:30px;
 }
-form .forgot div{
+form .mid-section .or{
     display: flex;
     align-items:center;
+    width: 100%;
+    margin-left: auto;    
+    margin-right: auto;  
     justify-content: center;
+}
+/* --or text-- */
+form .mid-section .or span:nth-child(2){
+    width:var(--or-width);
+    color: #BEBEBE;
+    margin-right: 0px;
+    margin-left: 0px;
+    font-size: 13px;
+    text-align: center;
     
-}
-form .forgot div span:first-child,
-form .forgot div span:last-child{
-    contain: "";
-    width:150px;
-    height: 2px;
-    background-color: #D8D8D8;
-    margin-right: 4px;
-}
-form .forgot div p{
-    text-align: left;
-}
 
-.login-by button{
-    width:171px;
-    height: 57px;
-    border-radius: 40px;
-    
 }
-.login-by button i{
+/* --two spans-- */
+form .mid-section .or span:first-child,
+form .mid-section .or span:last-child{
+    contain: "";
+    width:calc(100% / 2 - var(--or-width) / 2 - 5%);
+    height: 1px;
+    background-color: var(--grey-border);
+
+}
+/* ========end or ============= */
+
+
+
+.mid-section button i{
     margin-right:15px;
     font-size: 20px;
 }
 
-.login-by .facebook{
+.mid-section .facebook{
     background-color:#3B5998 ;
     color:#FFFFFF
 }
-.login-by .gmail{
+.mid-section .gmail{
     background-color:#FFF;
     color:#000000;
     border-color: #F1584D;
 }
-.login-by .gmail i{
+.mid-section .gmail i{
     color:#F14336;
 }
-.sign{
-    width:353px;
-    height:58px;
+
+
+/* =========tel section========== */
+:root{
+    --w-in-inp:100px;
+}
+form .tel{
+    margin:10px auto 20px auto;
+    position:relative;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    
+}
+
+form .tel input{
+    width:100%;
+    height: 100%;
+    border-radius: 40px;
+    /* padding-left: left of icn+ width of icn +prefered small padding by u   */
+    /* padding-right : left of icon + same small padding by u  */
+    padding: 5px 15px  5px calc(10px + var(--w-in-inp) + 5px);
+    border: 1px solid var(--grey-border);
+}
+form .tel input::placeholder{
+    /* border: 1px solid red; */
+    text-align: center;
+    color: var(--input-c);
+    /* عشان يتوسط صح لانه ناقصه بس بادنج العرض بتاع الزرار اللي جوه الانبوت */
+    /* margin-right: var(--w-in-inp); */
+    padding-right: var(--w-in-inp);
+}
+
+/* div.button to get button inside input  */
+form .tel .button{
+    width: var(--w-in-inp);
+    height: 80%;
     border-radius: 40px;
 
-    margin-top:20px;
-    background-color:#FBB03B;
-    color:#000000;
+    position: absolute;
+    top:50%;
+    left: 10px;
+    transform: translate(0,-50%);
 }
+/* -----------ul---------------- */
+/* button to get ul under it he has position rel and parent of ul */
+form .tel .button button{
+    cursor: pointer;
+    border-radius: 40px;
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+
+}
+form .tel .button button .uil-angle-down{
+    height:12px;
+    width:12px;
+    color: var(--black-ft);
+    transition:var(--transition);
+
+    position:absolute;
+    bottom: 0;
+    right:10%;
+    
+}
+form .tel .button button span{
+    color:var(--black-ft);
+}
+
+form .tel .button ul{
+    position: absolute;
+    top:120%;
+    width: 200px;
+    left:0;
+    /* width:100px; */
+    padding: 0;
+    /* border:1px solid #FBB03B; */
+    background-color: #f0f0f0;
+    color: var(--black-ft);
+    padding:20px ;
+    border-radius: 20px;
+
+    transition:var(--transition);
+    display: none;
+
+}
+form .tel .button button:hover  ul {
+    display: block;
+}
+form .tel .button button  ul:hover{
+    display: block;
+}
+form .tel .button ul li{
+    padding:10px;
+    border-bottom: 1px solid red;
+    transition: var(--transition);
+}
+form .tel .button ul li span{
+    margin-left: 15px; 
+}
+
+form .tel .button ul li:hover{
+    padding-left:20px;
+    
+}
+/* ======end tel============================== */
